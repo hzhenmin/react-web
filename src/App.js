@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Todos from './todo-app';
 
 class App extends Component {
   render() {
@@ -11,8 +12,9 @@ class App extends Component {
           <h1 className="App-title">你好，lingyi！</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Todo List
         </p>
+        <Todos />
       </div>
     );
   }
