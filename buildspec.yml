@@ -6,7 +6,7 @@ phases:
             - 'yarn -v'
             - 'yarn install'
             - 'yarn build'
-            - aws s3 sync --acl public-read --delete public/ "s3://${BUCKET_NAME}"
+            - aws s3 sync --acl public-read --delete build/ "s3://${BUCKET_NAME}"
 cache:
     paths:
         - node_modules
