@@ -14,7 +14,6 @@ class App extends Component {
         <p className="App-intro">
           Todo List
         </p>
-        <Todos />
       </div>
     );
   }
