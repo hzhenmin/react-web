@@ -2,9 +2,10 @@ version: 0.2
 phases:
     install:
         commands:
-            - yarn
-            - yarn build
+            - 'yarn install'
+    build:
+        commands:
+            - 'yarn build'
+    deploy:
+        commands:
             - aws s3 sync --acl public-read --delete build/ "s3://${BUCKET_NAME}"
-cache:
-    paths:
-        - node_modules
